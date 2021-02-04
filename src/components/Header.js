@@ -3,19 +3,21 @@ import Typed from "react-typed";
 
 const Header = () => {
   return (
-      <div className="header-wrapper">
-          <div className="main-info">
-              <h1>Web development and websites promotions</h1>
-              <Typed
-                className="typed-text"
-                strings={["Web Design", "Web Development", "Mern Stack", "Fullstack"]}
-                typeSpeed={40}
-                backSpeed={60}
-                loop
-              />
-              <a href="#!" className="btn-main-offer">Contact Me</a>
-          </div>
+    <div className="header-wrapper">
+      <div className="main-info">
+        <h1>Web development and websites promotions</h1>
+        <Typed
+          className="typed-text"
+          strings={["Web Design", "Web Development", "Mern Stack", "Fullstack"]}
+          typeSpeed={40}
+          backSpeed={60}
+          loop
+        />
+        <a href="#!" className="btn-main-offer">
+          Contact Me
+        </a>
       </div>
+    </div>
   );
 };
 
