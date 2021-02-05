@@ -4,6 +4,7 @@ import Particles from "react-particles-js";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from './components/AboutMe'
+import Services from './components/Services';
 
 import Logo from "./assets/img/logo.png";
 
@@ -68,6 +69,7 @@ function App() {
       <Navbar />
       <Header />
       <AboutMe />
+      <Services />
     </div>
   );
 }
