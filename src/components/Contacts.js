@@ -13,43 +13,61 @@ const Contacts = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-xs-12">
-            <input
-              id="name"
-              type="text"
-              className="form-control"
-              placeholder="Name"
-              name="name"
-            />
-            <input
-              type="text"
-              id="phone"
-              className="form-control"
-              placeholder="Phone Number"
-              name="phone"
-            />
-            <input
-              id="email"
-              type="email"
-              className="form-control"
-              placeholder="Email"
-              name="email"
-            />
-            <input
-              id="subject"
-              type="text"
-              className="form-control"
-              placeholder="Subject"
-              name="subject"
-            />
+            <div className="text-center">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Name"
+                name="name"
+              />
+              <div className="line"></div>
+            </div>
+            <span className="error-message">
+            </span>
+            <div className="text-center">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Phone Number"
+                name="phone"
+              />
+              <div className="line"></div>
+            </div>
+            <span className="error-message">
+            </span>
+            <div className="text-center">
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Email"
+                name="email"
+              />
+              <div className="line"></div>
+            </div>
+            <span className="error-message">
+            </span>
+            <div className="text-center">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Subject"
+                name="subject"
+              />
+              <div className="line"></div>
+            </div>
+            <span className="error-message">
+            </span>
           </div>
           <div className="col-md-6 col-xs-12">
-            <textarea
-              id="description"
-              type="text"
-              className="form-control"
-              placeholder="Email"
-              name="email"
-            ></textarea>
+            <div className="text-center">
+              <textarea
+                type="text"
+                className="form-control"
+                placeholder="Please describe shortly you project..."
+                name="description"
+              ></textarea>
+              <div className="line"></div>
+            </div>
             <button className="btn-main-offer contact-btn" type="submit">
               Contact me
             </button>
