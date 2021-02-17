@@ -39,7 +39,7 @@ const Contacts = () => {
   };
 
   return (
-    <div className="contacts">
+    <div id="contacts" className="contacts">
       <div className="text-center">
         <h1>contact me</h1>
         <p>
@@ -58,7 +58,7 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Name"
                   name="name"
-                  autocomplete="off"
+                  autoComplete="off"
                   ref={register({
                     required: "Please enter your name",
                     maxLength: {
@@ -79,7 +79,7 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Phone Number"
                   name="phone"
-                  autocomplete="off"
+                  autoComplete="off"
                   ref={register({
                     required: "Please add your phone number",
                   })}
@@ -95,7 +95,7 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Email"
                   name="email"
-                  autocomplete="off"
+                  autoComplete="off"
                   ref={register({
                     required: "Please provide you email",
                     pattern: {
@@ -115,7 +115,7 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Subject"
                   name="subject"
-                  autocomplete="off"
+                  autoComplete="off"
                   ref={register({
                     required: "OOPS, you forget to add the subject.",
                   })}
@@ -133,7 +133,7 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Please describe shortly you project..."
                   name="description"
-                  autocomplete="off"
+                  autoComplete="off"
                   ref={register({
                     required: "Please describe shortly your project needs...",
                   })}
