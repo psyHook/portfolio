@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Logo from "../assets/img/logo.png";
+import Logo from "../assets/mega-bola.png";
 import { Link } from "react-scroll";
 
 // React fontawesome imports
@@ -11,9 +11,14 @@ const Navbar = () => {
     <Fragment>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="#!">
-            <img src={Logo} alt="logo" />
-          </a>
+          <Link
+            className="navbar-brand nav-link"
+            to="home"
+            offset={-95}
+            smooth={true}
+          >
+            <img className="logo-image" src={Logo} alt="logo" />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -28,20 +33,15 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <Link
-                  smooth={true}
-                  to="home"
-                  className="nav-link"
-                  offset={-110}
-                >
+                <Link smooth={true} to="home" className="nav-link" offset={-95}>
                   Home <span className="sr-only">(current)</span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  offset={-110}
-                  smooth={true}
+                  offset={-95}
+                  smooth={"easeOutQuad"}
                   to="aboutme"
                 >
                   About me
@@ -50,17 +50,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  offset={-110}
-                  smooth={true}
-                  to="services"
-                >
-                  Services
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  offset={-110}
+                  offset={-95}
                   smooth={true}
                   to="experience"
                 >
@@ -70,7 +60,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  offset={-110}
+                  offset={-95}
                   smooth={true}
                   to="portfolio"
                 >
@@ -80,7 +70,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  offset={-110}
+                  offset={-50}
                   smooth={true}
                   to="contacts"
                 >
