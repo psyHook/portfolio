@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@900&display=swap');
 
 :root {
   --primary-white: #ffffff;
@@ -89,7 +91,7 @@ nav ul li {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .main-info {
@@ -106,13 +108,30 @@ nav ul li {
   z-index: 1;
 }
 
-.main-info h1 {
-  color: var(--primary-purple);
+.text-left span{
+  color: var(--primary-grey);
+  font-size: 2.5rem !important;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.text-left h2 {
+  color: var(--primary-grey);
+  font-size: 1.5rem;
+  letter-spacing: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
   text-transform: uppercase;
 }
 
+.main-info h1 {
+  color: var(--primary-purple);
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 100px;
+}
+
 @media (max-width: 768px) {
-  ..main-info h1 {
+  .main-info h1 {
     font-size: 1.5rem !important;
   }
 }
@@ -120,7 +139,7 @@ nav ul li {
 /* ---------- TYPED TEXT COMPONENTE---------- */
 
 .typed-text {
-  font-size: 2rem;
+  font-size: 4rem;
   color: var(--primary-white);
 }
 
@@ -173,6 +192,7 @@ nav ul li {
 /* ---------- ABOUT ME ---------- */
 .aboutme {
   margin-bottom: 5rem;
+  font-family: 'Orbitron', sans-serif;
 }
 .photo-wrap {
   display: flex;
@@ -265,6 +285,7 @@ nav ul li {
 
 .experience {
   padding: 0.7rem;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .experience-wrapper {
@@ -357,6 +378,7 @@ nav ul li {
 .portfolio-wrapper {
   background: var(--primary-light-grey);
   padding: 3rem 0;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .portfolio-wrapper h1 {
