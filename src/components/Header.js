@@ -6,10 +6,7 @@ import { Link } from "react-scroll";
 const SlideList = [
   {
     textPosition: "text-left",
-    category: "Welcome to my World",
-    description: "",
-    buttonText: "",
-    buttonLink: "",
+    category: "Hello World",
   },
 ];
 
@@ -22,11 +19,16 @@ const Header = () => {
             <div className="row">
               <div className="col-lg-12">
                 <div className={`inner  ${value.textPosition}`}>
-                  {value.category ? <span className="title-h">{value.category}</span> : ""}
+                  {value.category ? (
+                    <span className="title-h">{value.category}</span>
+                  ) : (
+                    ""
+                  )}
                   <h1 className="title">
-                    Hi, I’m Juan Galarce <br />
+                    Hi, I’m Juan Galarce
+                    <br />
                     <TextLoop>
-                      <span> JS Developer.</span>
+                      <span> Fullstack Javascript.</span>
                       <span> Web Design.</span>
                       <span> Master Pokemon.</span>
                     </TextLoop>

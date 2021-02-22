@@ -15,13 +15,14 @@ const AboutMe = () => {
             />
           </div>
         </div>
-        <div className="col-lg-6 col-xm-12">
+        <div className="col-lg-6 col-xm-12 about-p">
           <h1 className="title-about">About me</h1>
           <p className="fs-2">
             Hello, my name is Juan Galarce and I am a computer engineer and
             Fullstack Developer Javascript, I am 31 years old and passionate
             about learning and technology, self-taught, responsible and eager to
-            continue growing as a professional.
+            continue growing as a professional. I currently work with MERN
+            Stack.
           </p>
           <img className="mern-image" src={Logo} alt="MERN STACK" />
         </div>

@@ -54,7 +54,7 @@ const Navbar = () => {
                   smooth={true}
                   to="experience"
                 >
-                  Experience
+                  Education & Experience
                 </Link>
               </li>
               <li className="nav-item">

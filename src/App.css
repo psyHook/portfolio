@@ -32,10 +32,14 @@ nav {
 nav a.nav-link {
   letter-spacing: 0.0375rem;
   cursor: pointer;
+  color: var(--primary-grey);
 }
 
 nav ul li {
+  font-size: 0.80rem;
   text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 .logo-image {
@@ -108,18 +112,42 @@ nav ul li {
   z-index: 1;
 }
 
+
 .text-left span{
   color: var(--primary-grey);
-  font-size: 2.5rem !important;
+  font-size: 3rem !important;
   font-family: 'Orbitron', sans-serif;
 }
 
+
 .text-left h2 {
   color: var(--primary-grey);
-  font-size: 1.5rem;
-  letter-spacing: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.8rem;
   font-family: 'Orbitron', sans-serif;
   text-transform: uppercase;
+}
+
+.text-left .title {
+  font-size: 4rem !important;
+}
+
+@media(max-width: 769px){
+  .text-left span{
+    font-size: 2rem !important;
+  }
+  .text-left .title {
+    font-size: 3.2rem !important;
+  }
+}
+
+@media(max-width: 1280px){
+  .text-left span{
+    font-size: 2rem !important;
+  }
+  .text-left .title {
+    font-size: 3.2rem !important;
+  }
 }
 
 .main-info h1 {
@@ -134,6 +162,9 @@ nav ul li {
   .main-info h1 {
     font-size: 1.5rem !important;
   }
+  .typed-text h2{
+    font-size: 2rem !important;
+  }
 }
 
 /* ---------- TYPED TEXT COMPONENTE---------- */
@@ -147,8 +178,8 @@ nav ul li {
   .main-info h1 {
     font-size: 1.5rem !important;
   }
-  .typed-text {
-    font-size: 1.3rem !important;
+  .typed-text h2{
+    font-size: 1rem !important;
   }
 }
 
@@ -193,6 +224,7 @@ nav ul li {
 .aboutme {
   margin-bottom: 5rem;
   font-family: 'Orbitron', sans-serif;
+  color: var(--primary-dark-grey);
 }
 .photo-wrap {
   display: flex;
@@ -208,6 +240,11 @@ nav ul li {
 .title-about {
   color: var(--primary-purple);
   text-transform: uppercase;
+}
+
+.about-p p {
+  color: var(--primary-black);
+  font-size: 1.2rem;
 }
 
 .mern-image{
@@ -286,6 +323,11 @@ nav ul li {
 .experience {
   padding: 0.7rem;
   font-family: 'Orbitron', sans-serif;
+  color: var(--primary-purple);
+}
+
+.experience-wrapper .timeline-content h3 {
+  color: var(--primary-purple);
 }
 
 .experience-wrapper {
@@ -294,9 +336,10 @@ nav ul li {
   overflow: hidden;
 }
 
+
 .experience h1 {
   text-transform: uppercase;
-  color: var(--primary-purple);
+
 }
 
 .experience-wrapper::before {
@@ -472,6 +515,7 @@ nav ul li {
   padding-bottom: 4rem;
   margin-bottom: 0;
   width: 100%;
+  
 }
 
 .testimonials h1 {
@@ -532,6 +576,7 @@ nav ul li {
 .contacts {
   background: var(--primary-dark);
   padding: 3rem 0;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .contacts h1 {
@@ -638,6 +683,7 @@ textarea.form-control {
   background: var(--primary-black);
   color: var(--primary-dark-grey);
   padding: 3rem;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .footer a {
