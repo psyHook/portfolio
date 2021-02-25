@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@900&display=swap");
 
 :root {
   --primary-white: #ffffff;
@@ -36,9 +36,9 @@ nav a.nav-link {
 }
 
 nav ul li {
-  font-size: 0.80rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   letter-spacing: 0.1rem;
 }
 
@@ -112,58 +112,60 @@ nav ul li {
   z-index: 1;
 }
 
-
-.text-left span{
+.text-left span {
   color: var(--primary-grey);
-  font-size: 3rem !important;
-  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem !important;
+  font-family: "Orbitron", sans-serif;
 }
-
 
 .text-left h2 {
   color: var(--primary-grey);
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.8rem;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   text-transform: uppercase;
+  margin-top: 5rem;
 }
 
 .text-left .title {
   font-size: 4rem !important;
 }
 
-@media(max-width: 769px){
-  .text-left span{
-    font-size: 2rem !important;
-  }
-  .text-left .title {
-    font-size: 3.2rem !important;
-  }
-}
-
-@media(max-width: 1280px){
-  .text-left span{
-    font-size: 2rem !important;
-  }
-  .text-left .title {
-    font-size: 3.2rem !important;
-  }
-}
-
-.main-info h1 {
+.text-left .title-2 {
   color: var(--primary-purple);
   text-transform: uppercase;
-  font-size: 5rem;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   margin-bottom: 100px;
+  font-size: 4rem !important;
+}
+
+@media (max-width: 1280px) {
+  .text-left span {
+    font-size: 2rem !important;
+  }
+  .text-left .title {
+    font-size: 3.2rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .text-left span {
+    font-size: 1.5rem !important;
+  }
+  .text-left .title-2 {
+    font-size: 2.8rem !important;
+  }
 }
 
 @media (max-width: 768px) {
+  ..text-left span {
+    font-size: 1rem;
+  }
   .main-info h1 {
     font-size: 1.5rem !important;
   }
-  .typed-text h2{
-    font-size: 2rem !important;
+  .typed-text h2 {
+    font-size: 1.2rem !important;
   }
 }
 
@@ -178,7 +180,7 @@ nav ul li {
   .main-info h1 {
     font-size: 1.5rem !important;
   }
-  .typed-text h2{
+  .typed-text h2 {
     font-size: 1rem !important;
   }
 }
@@ -211,7 +213,7 @@ nav ul li {
   position: absolute;
   height: 100vh;
   width: 100vh;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -223,8 +225,13 @@ nav ul li {
 /* ---------- ABOUT ME ---------- */
 .aboutme {
   margin-bottom: 5rem;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   color: var(--primary-dark-grey);
+}
+
+.aboutme-wall {
+  background: var(--primary-light-grey);
+  padding-bottom: 1rem;
 }
 .photo-wrap {
   display: flex;
@@ -247,10 +254,10 @@ nav ul li {
   font-size: 1.2rem;
 }
 
-.mern-image{
+.mern-image {
   display: block;
   margin-left: 0;
-  width: 75%; 
+  width: 75%;
   padding-top: 3rem;
 }
 
@@ -322,7 +329,7 @@ nav ul li {
 
 .experience {
   padding: 0.7rem;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   color: var(--primary-purple);
 }
 
@@ -336,10 +343,8 @@ nav ul li {
   overflow: hidden;
 }
 
-
 .experience h1 {
   text-transform: uppercase;
-
 }
 
 .experience-wrapper::before {
@@ -421,7 +426,7 @@ nav ul li {
 .portfolio-wrapper {
   background: var(--primary-light-grey);
   padding: 3rem 0;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 .portfolio-wrapper h1 {
@@ -431,7 +436,7 @@ nav ul li {
 .portfolio-image {
   width: 15rem;
   border: 1px solid var(--primary-purple);
-  padding: 0 0.5rem;
+  padding: 0.5 0.5rem;
 }
 
 .portfolio-image-box {
@@ -445,14 +450,14 @@ nav ul li {
   opacity: 0;
   background: var(--primary-black);
   width: 15rem;
-  height: 8rem;
+  height: 7.7rem;
   top: 0;
   border: 1px solid var(--primary-red);
   cursor: pointer;
 }
 
 .portfolio-image-box:hover .overflow {
-  opacity: 60%;
+  opacity: 70%;
   transition: 0.3s ease-in-out;
 }
 
@@ -465,6 +470,8 @@ nav ul li {
   font-size: 1.5rem;
 }
 
+
+
 .portfolio-image-box:hover .portfolio-icon {
   opacity: 70%;
   transition: 0.3s ease-in-out;
@@ -473,9 +480,15 @@ nav ul li {
 
 /* ---------- POPUPBOX ---------- */
 
+.popupbox-content{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio-image-popupbox {
-  width: 45rem;
-  padding: 0 0.5rem;
+  width:50%;
+  border: 1px solid var(--primary-dark-grey);
 }
 
 .hyper-link {
@@ -489,21 +502,29 @@ nav ul li {
 
 /* ---------- MEDIA POPUPBOX ---------- */
 
-@media (max-width: 768px) {
+@media(max-width: 768px) {
   .portfolio-image-popupbox {
     width: 100%;
   }
 }
 
-@media (max-height: 640px) {
-  .popupbox-wrapper {
-    height: 100% !important;
-  }
-
+@media(max-height: 570px) {
+.popupbox-wrapper {
+  height: 100%;
+}
   .portfolio-image-popupbox {
     width: 50%;
   }
 }
+
+@media(max-height: 280px) {
+  .popupbox-wrapper {
+    height: 90%;
+  }
+    .portfolio-image-popupbox {
+      width: 30%;
+    }
+  }
 
 /* ---------- TESTIMONIALS ---------- */
 
@@ -515,7 +536,6 @@ nav ul li {
   padding-bottom: 4rem;
   margin-bottom: 0;
   width: 100%;
-  
 }
 
 .testimonials h1 {
@@ -576,7 +596,7 @@ nav ul li {
 .contacts {
   background: var(--primary-dark);
   padding: 3rem 0;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 .contacts h1 {
@@ -683,7 +703,7 @@ textarea.form-control {
   background: var(--primary-black);
   color: var(--primary-dark-grey);
   padding: 3rem;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 .footer a {

@@ -33,11 +33,22 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <Link smooth={true} to="home" className="nav-link" offset={-95}>
+                <Link
+                  smooth={true}
+                  to="home"
+                  className="nav-link"
+                  offset={-95}
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                >
                   Home <span className="sr-only">(current)</span>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+              >
                 <Link
                   className="nav-link"
                   offset={-95}
@@ -53,6 +64,8 @@ const Navbar = () => {
                   offset={-95}
                   smooth={true}
                   to="experience"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
                 >
                   Education & Experience
                 </Link>
@@ -63,11 +76,17 @@ const Navbar = () => {
                   offset={-95}
                   smooth={true}
                   to="portfolio"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
                 >
                   Portfolio
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+              >
                 <Link
                   className="nav-link"
                   offset={-50}
