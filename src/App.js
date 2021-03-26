@@ -4,81 +4,75 @@ import Particles from "react-particles-js";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
-import Services from "./components/Services";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
-import Testimonials from "./components/Testimonials";
 import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 
-
-import Logo from "./assets/img/logo.png";
 
 function App() {
   return (
     <div className="App">
       <Particles
-        className="particles-canvas"
         params={{
           particles: {
             number: {
-              value: 10,
+              value: 160,
               density: {
-                enable: true,
-                value_area: 800,
+                enable: false,
+              },
+            },
+            size: {
+              value: 10,
+              random: true,
+              anim: {
+                speed: 4,
+                size_min: 1,
               },
             },
             line_linked: {
               enable: false,
             },
             move: {
-              speed: 5,
+              random: true,
+              speed: 1,
+              direction: "top",
               out_mode: "out",
             },
-            shape: {
-              type: ["image", "circle"],
-              image: [
-                {
-                  src: `${Logo}`,
-                  height: 80,
-                  width: 80,
-                },
-                {
-                  src: `${Logo}`,
-                  height: 80,
-                  width: 80,
-                },
-                {
-                  src: `${Logo}`,
-                  height: 80,
-                  width: 80,
-                },
-              ],
-            },
-            color: {
-              value: "#CCC",
-            },
-            size: {
-              value: 40,
-              random: false,
-              anim: {
+          },
+          interactivity: {
+            events: {
+              onhover: {
                 enable: true,
-                speed: 4,
-                size_min: 10,
-                sync: false,
+                mode: "bubble",
+              },
+              onclick: {
+                enable: true,
+                mode: "repulse",
+              },
+            },
+            modes: {
+              bubble: {
+                distance: 250,
+                duration: 2,
+                size: 0,
+                opacity: 0,
+              },
+              repulse: {
+                distance: 400,
+                duration: 4,
               },
             },
           },
-          retina_detect: false,
         }}
       />
       <Navbar />
       <Header />
       <AboutMe />
-      <Services />
       <Experience />
       <Portfolio />
-      <Testimonials />
       <Contacts />
+      <Footer />
     </div>
   );
 }

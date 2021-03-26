@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
-import Logo from "../assets/img/logo.png";
+import Logo from "../assets/mega-bola.png";
+import { Link } from "react-scroll";
 
 // React fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,11 +9,16 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <Fragment>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="#!">
-            <img src={Logo} alt="logo"/>
-          </a>
+          <Link
+            className="navbar-brand nav-link"
+            to="home"
+            offset={-95}
+            smooth={true}
+          >
+            <img className="logo-image" src={Logo} alt="logo" />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,39 +28,73 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <FontAwesomeIcon icon={faBars} style={{ color: "#fff"}} />
+            <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }} />
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#!">
-                  Home
-                </a>
+              <li className="nav-item active">
+                <Link
+                  smooth={true}
+                  to="home"
+                  className="nav-link"
+                  offset={-95}
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                >
+                  Home <span className="sr-only">(current)</span>
+                </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#!">
+              <li
+                className="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+              >
+                <Link
+                  className="nav-link"
+                  offset={-95}
+                  smooth={"easeOutQuad"}
+                  to="aboutme"
+                >
                   About me
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#!">
-                  Services
-                </a>
+                <Link
+                  className="nav-link"
+                  offset={-95}
+                  smooth={true}
+                  to="experience"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                >
+                  Education & Experience
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#!">
-                  Experience
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#!">
+                <Link
+                  className="nav-link"
+                  offset={-95}
+                  smooth={true}
+                  to="portfolio"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                >
                   Portfolio
-                </a>
+                </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#!">
+              <li
+                className="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+              >
+                <Link
+                  className="nav-link"
+                  offset={-50}
+                  smooth={true}
+                  to="contacts"
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

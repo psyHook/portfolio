@@ -1,21 +1,29 @@
 import React from "react";
-import Typed from "react-typed";
+import TextLoop from "react-text-loop";
 
 const Header = () => {
   return (
     <div className="header-wrapper">
-      <div className="main-info">
-        <h1>Web development and websites promotions</h1>
-        <Typed
-          className="typed-text"
-          strings={["Web Design", "Web Development", "Mern Stack", "Fullstack"]}
-          typeSpeed={40}
-          backSpeed={60}
-          loop
-        />
-        <a href="#!" className="btn-main-offer">
-          Contact Me
-        </a>
+      <div id="home" className="main-info">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="inner text-left">
+                <span className="title-h">Hello World</span>
+                <h3 className="title">
+                  <span className="title-2">Hi, I’m Juan Galarce</span>
+                  <br />
+                  <TextLoop>
+                    <span> Fullstack Javascript.</span>
+                    <span> Web Design.</span>
+                    <span> Master Pokemon.</span>
+                  </TextLoop>
+                </h3>
+                <h2 className="title-based">based in Chile.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
